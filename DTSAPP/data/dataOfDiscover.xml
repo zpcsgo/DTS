@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <!--引入环节-->
+  <part>
+    <name>需求</name>
+    <name>设计</name>
+    <name>编码</name>
+    <name>问题单修改</name>
+    <name>资料</name>
+  </part>
+  <!--问题代码类型-->
+  <codeType>
+    <name>历史代码</name>
+    <name>新增代码</name>
+  </codeType>
+  <!--活动大类-->
+  <activeBigClass id="1">
+    <name>需求Review</name>
+    <activeSmallClass id="1">
+      <name>需求检视</name>
+      <trigger>
+        <name>组网/场景遗漏或错误</name>
+        <name>需求规格不明确</name>
+        <name>需求规格一致性</name>
+        <name>需求可验证性</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="2">
+    <name>设计Review</name>
+    <activeSmallClass id="1">
+      <name>设计检视</name>
+      <trigger>
+        <name>接口一致性</name>
+        <name>方案完成性</name>
+        <name>数据依赖</name>
+        <name>升级或同步</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="3">
+    <name>开发Review</name>
+    <activeSmallClass id="1">
+      <name>代码检视</name>
+      <trigger>
+        <name>函数调用</name>
+        <name>变量赋值或初始化</name>
+        <name>内存管理</name>
+        <name>指针和字符串处理</name>
+        <name>边界值和范围</name>
+        <name>中断</name>
+        <name>临界资源</name>
+        <name>算法处理</name>
+        <name>文字信息</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="2">
+      <name>资料检视</name>
+      <trigger>
+        <name>正确性</name>
+        <name>完整性</name>
+        <name>易理解</name>
+        <name>一致性</name>
+        <name>易查找</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="4">
+    <name>UT</name>
+    <activeSmallClass id="1">
+      <name>单元测试UT</name>
+      <trigger>
+        <name>变量赋值</name>
+        <name>返回值检查</name>
+        <name>循环边界</name>
+        <name>缺乏分支处理</name>
+        <name>功能实现错误</name>
+        <name>内存越界和泄漏</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="5">
+    <name>MST</name>
+    <activeSmallClass id="1">
+      <name>模块系统测试MST</name>
+      <trigger>
+        <name>模块间接口一致性</name>
+        <name>合法性检查</name>
+        <name>时序和任务互斥</name>
+        <name>算法错误</name>
+        <name>模块间分支处理</name>
+        <name>模块功能实现错误</name>
+        <name>模块/接口性能指标</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="6">
+    <name>story验证</name>
+    <activeSmallClass id="1">
+      <name>story测试</name>
+      <trigger>
+        <name>正常路径</name>
+        <name>异常路径</name>
+        <name>增删改查</name>
+        <name>数据组合</name>
+        <name>状态迁移</name>
+        <name>功能交互</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="7">
+    <name>迭代验收</name>
+    <activeSmallClass id="1">
+      <name>迭代测试</name>
+      <trigger>
+        <name>功能交互</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+</root>

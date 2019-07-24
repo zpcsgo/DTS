@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <!--引入环节-->
+  <part>
+    <name>需求</name>
+    <name>设计</name>
+    <name>编码</name>
+    <name>问题单修改</name>
+    <name>资料</name>
+  </part>
+  <!--问题代码类型-->
+  <codeType>
+    <name>历史代码</name>
+    <name>新增代码</name>
+  </codeType>
+  <!--根因类型和根因子类-->
+  <!--活动大类-->
+  <activeBigClass id="1">
+    <name>需求Review</name>
+    <activeSmallClass id="1">
+      <name>需求检视</name>
+      <trigger>
+        <name>组网/场景遗漏或错误</name>
+        <name>需求规格不明确</name>
+        <name>需求规格一致性</name>
+        <name>需求可验证性</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="2">
+    <name>设计Review</name>
+    <activeSmallClass id="1">
+      <name>设计检视</name>
+      <trigger>
+        <name>接口一致性</name>
+        <name>方案完成性</name>
+        <name>数据依赖</name>
+        <name>升级或同步</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="3">
+    <name>开发Review</name>
+    <activeSmallClass id="1">
+      <name>代码检视</name>
+      <trigger>
+        <name>函数调用</name>
+        <name>变量赋值或初始化</name>
+        <name>内存管理</name>
+        <name>指针和字符串处理</name>
+        <name>边界值和范围</name>
+        <name>中断</name>
+        <name>临界资源</name>
+        <name>算法处理</name>
+        <name>文字信息</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="2">
+      <name>资料检视</name>
+      <trigger>
+        <name>正确性</name>
+        <name>完整性</name>
+        <name>易理解</name>
+        <name>一致性</name>
+        <name>易查找</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="4">
+    <name>UT</name>
+    <activeSmallClass id="1">
+      <name>单元测试UT</name>
+      <trigger>
+        <name>变量赋值</name>
+        <name>返回值检查</name>
+        <name>循环边界</name>
+        <name>缺乏分支处理</name>
+        <name>功能实现错误</name>
+        <name>内存越界和泄漏</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="5">
+    <name>MST</name>
+    <activeSmallClass id="1">
+      <name>模块系统测试MST</name>
+      <trigger>
+        <name>模块间接口一致性</name>
+        <name>合法性检查</name>
+        <name>时序和任务互斥</name>
+        <name>算法错误</name>
+        <name>模块间分支处理</name>
+        <name>模块功能实现错误</name>
+        <name>模块/接口性能指标</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="6">
+    <name>story验证</name>
+    <activeSmallClass id="1">
+      <name>story测试</name>
+      <trigger>
+        <name>正常路径</name>
+        <name>异常路径</name>
+        <name>增删改查</name>
+        <name>数据组合</name>
+        <name>状态迁移</name>
+        <name>功能交互</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="7">
+    <name>迭代验收</name>
+    <activeSmallClass id="1">
+      <name>迭代测试</name>
+      <trigger>
+        <name>功能交互</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="8">
+    <name>SDV</name>
+    <activeSmallClass id="1">
+      <name>功能测试</name>
+      <trigger>
+        <name>正常路径</name>
+        <name>异常路径</name>
+        <name>增删改查</name>
+        <name>数据组合</name>
+        <name>状态迁移</name>
+        <name>功能交互</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="2">
+      <name>系统性能测试</name>
+      <trigger>
+        <name>性能指标</name>
+        <name>管理能力</name>
+        <name>长期稳定性</name>
+        <name>极限测试</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="3">
+      <name>系统可靠性测试</name>
+      <trigger>
+        <name>网络及设备冗余保护</name>
+        <name>程序及数据备份</name>
+        <name>故障检测与定位</name>
+        <name>故障恢复与隔离</name>
+        <name>系统过载</name>
+        <name>系统重启</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="4">
+      <name>标准符合测试</name>
+      <trigger>
+        <name>国际标准</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="5">
+      <name>系统安全测试</name>
+      <trigger>
+        <name>安全扫描</name>
+        <name>系统安全测试</name>
+        <name>网络安全测试</name>
+        <name>应用安全测试</name>
+        <name>管理维护安全测试</name>
+        <name>安全性静态检查</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="6">
+      <name>可服务性测试</name>
+      <trigger>
+        <name>网络规划和设计</name>
+        <name>安装调测</name>
+        <name>升级和打补丁</name>
+        <name>巡检和维护</name>
+        <name>全球化部署</name>
+        <name>电子标签录入</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="7">
+      <name>兼容性测试</name>
+      <trigger>
+        <name>硬件替代兼容</name>
+        <name>软件升级兼容</name>
+        <name>命令行接口兼容</name>
+        <name>操作系统兼容</name>
+        <name>特性Delta变更兼容</name>
+        <name>MIB变更兼容</name>
+        <name>告警和事件变更兼容</name>
+        <name>错误码变更兼容</name>
+        <name>Trap变更兼容</name>
+        <name>界面变更兼容</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="8">
+      <name>资料测试</name>
+      <trigger>
+        <name>按资料操作</name>
+        <name>资料信息参考</name>
+        <name>资料检索查阅</name>
+        <name>资料信息安全</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="9">
+    <name>SIT</name>
+    <activeSmallClass id="1">
+      <name>多系统集成验证</name>
+      <trigger>
+        <name>设备_网管_工具_集成</name>
+        <name>互联互通&amp;对接测试</name>
+        <name>大网测试和模拟试验局</name>
+        <name>镜像测试</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="2">
+      <name>客户化场景验证</name>
+      <trigger>
+        <name>业务规划</name>
+        <name>业务部署</name>
+        <name>业务发放</name>
+        <name>链路故障</name>
+        <name>扩容割接</name>
+        <name>日常运维</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="3">
+      <name>解决方案测试</name>
+      <trigger>
+        <name>网络规划设计</name>
+        <name>业务规划部署</name>
+        <name>E2E业务发放</name>
+        <name>故障诊断</name>
+        <name>网络升级扩容搬迁</name>
+        <name>商用评估</name>
+        <name>网络评估优化</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="4">
+      <name>解决方案资料测试</name>
+      <trigger>
+        <name></name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="10">
+    <name>UAT</name>
+    <activeSmallClass id="1">
+      <name>入网_核准_认证_标杆测试</name>
+      <trigger>
+        <name>入网测试</name>
+        <name>核准测试</name>
+        <name>认证测试</name>
+        <name>标杆测试</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="2">
+      <name>Beta测试</name>
+      <trigger>
+        <name>Beta测试</name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="3">
+      <name>服务验收</name>
+      <trigger>
+        <name>服务验收</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+  <activeBigClass id="11">
+    <name>维护</name>
+    <activeSmallClass id="1">
+      <name>生产装配调测</name>
+      <trigger>
+        <name></name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="2">
+      <name>工程安装调试</name>
+      <trigger>
+        <name></name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="3">
+      <name>客户验收测试</name>
+      <trigger>
+        <name></name>
+      </trigger>
+    </activeSmallClass>
+    <activeSmallClass id="4">
+      <name>网上运行维护</name>
+      <trigger>
+        <name>日常维护和巡检</name>
+        <name>网络扩容</name>
+        <name>版本升级打补丁</name>
+        <name>故障处理</name>
+      </trigger>
+    </activeSmallClass>
+  </activeBigClass>
+</root>

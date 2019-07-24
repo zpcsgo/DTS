@@ -1,0 +1,6 @@
+E:\c# Test\Entity\bin\Debug\Entity.dll
+E:\c# Test\Entity\bin\Debug\Entity.pdb
+E:\c# Test\Entity\obj\Debug\Entity.csprojAssemblyReference.cache
+E:\c# Test\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+E:\c# Test\Entity\obj\Debug\Entity.dll
+E:\c# Test\Entity\obj\Debug\Entity.pdb
